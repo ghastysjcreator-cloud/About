@@ -1,0 +1,1944 @@
+/* =======================================
+   CYBER WINDOW SYSTEM
+======================================= */
+
+.window {
+  background: #0d1c11;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  margin: 30px 0;
+
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.25);
+}
+
+.window:hover {
+  box-shadow: 0 0 35px rgba(0, 255, 136, 0.55);
+
+  transform: translateY(-3px);
+}
+
+.window-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 12px 18px;
+
+  background: #15331d;
+
+  border-bottom: 2px solid #00ff88;
+}
+
+.window-title {
+  font-weight: bold;
+
+  color: #8dffbc;
+
+  letter-spacing: 1px;
+}
+
+.window-buttons {
+  display: flex;
+
+  gap: 8px;
+}
+
+.window-buttons span {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  display: block;
+}
+
+.window-buttons span:nth-child(1) {
+  background: #ff5f56;
+}
+
+.window-buttons span:nth-child(2) {
+  background: #ffbd2f;
+}
+
+.window-buttons span:nth-child(3) {
+  background: #27c93f;
+}
+
+.window-content {
+  padding: 20px;
+}
+
+/* =======================================
+   PROFILE CARDS
+======================================= */
+
+.profile-card {
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+  background: #122417;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+}
+
+.profile-card img {
+  width: 120px;
+
+  height: 120px;
+
+  border-radius: 50%;
+
+  border: 3px solid #00ff88;
+
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  margin-bottom: 8px;
+}
+
+/* =======================================
+   PROJECT GRID
+======================================= */
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+.project-box {
+  background: #13281a;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  transition: 0.3s;
+}
+
+.project-box:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 0 30px #00ff88;
+}
+
+.project-box h3 {
+  color: #a4ffd0;
+}
+
+.project-box p {
+  margin-top: 10px;
+}
+
+/* =======================================
+   STATS
+======================================= */
+
+.stats {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 20px;
+}
+
+.stat {
+  background: #13281a;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  padding: 25px;
+}
+
+.stat h2 {
+  font-size: 2.2rem;
+
+  color: #00ff88;
+}
+
+.stat p {
+  margin-top: 10px;
+}
+
+/* =======================================
+   TERMINAL
+======================================= */
+
+.terminal {
+  background: #030603;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  font-family: monospace;
+
+  color: #66ff99;
+
+  overflow: auto;
+}
+
+.terminal::before {
+  content: "root@piklz-network:~$";
+
+  color: #00ff88;
+
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+/* =======================================
+   GLOWING DIVIDER
+======================================= */
+
+.divider {
+  height: 2px;
+
+  background: #00ff88;
+
+  margin: 35px 0;
+
+  box-shadow: 0 0 15px #00ff88;
+}
+
+/* =======================================
+   PIXEL BUTTON
+======================================= */
+
+.pixel-button {
+  display: inline-block;
+
+  padding: 12px 22px;
+
+  background: #00aa55;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  border: 3px solid #00ff88;
+
+  border-radius: 6px;
+
+  transition: 0.25s;
+}
+
+.pixel-button:hover {
+  background: #00ff88;
+
+  color: #000;
+
+  box-shadow: 0 0 20px #00ff88;
+}
+
+/* =======================================
+   BADGES
+======================================= */
+
+.badges {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.badge {
+  background: #12301b;
+
+  border: 2px solid #00ff88;
+
+  color: #b8ffd8;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+}
+
+/* =======================================
+   SIDEBAR
+======================================= */
+
+.sidebar {
+  background: #0f2013;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  margin: 25px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 12px;
+}
+
+.sidebar a {
+  display: block;
+
+  color: #b8ffd8;
+
+  text-decoration: none;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  transition: 0.25s;
+}
+
+.sidebar a:hover {
+  background: #16331d;
+
+  color: #00ff88;
+
+  padding-left: 18px;
+}
+
+/* =======================================
+   GALLERY
+======================================= */
+
+.gallery {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+
+  border: 3px solid #00ff88;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  image-rendering: pixelated;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0 0 25px #00ff88;
+}
+
+/* =======================================
+   CHARACTER CARDS
+======================================= */
+
+.character {
+  background: #122417;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  transition: 0.3s;
+}
+
+.character:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
+}
+
+.character h3 {
+  color: #9effc8;
+}
+
+/* =======================================
+   INFO BOXES
+======================================= */
+
+.info {
+  background: #13301b;
+
+  border-left: 6px solid #00ff88;
+
+  padding: 18px;
+
+  border-radius: 8px;
+
+  margin: 20px 0;
+}
+
+.warning-box {
+  background: #2a2408;
+
+  border-left: 6px solid gold;
+}
+
+.error-box {
+  background: #2a1111;
+
+  border-left: 6px solid red;
+}
+
+.success-box {
+  background: #102915;
+
+  border-left: 6px solid lime;
+}
+
+/* =======================================
+   PROGRESS BAR
+======================================= */
+
+.progress {
+  background: #061109;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+
+  height: 22px;
+}
+
+.progress-fill {
+  width: 85%;
+
+  height: 100%;
+
+  background: linear-gradient(90deg, #00aa55, #00ff88);
+}
+
+/* =======================================
+   FOOTER
+======================================= */
+
+footer {
+  text-align: center;
+
+  padding: 50px 20px;
+
+  background: #09140c;
+}
+
+footer h2 {
+  color: #00ff88;
+}
+
+footer p {
+  color: #b7ffd5;
+}
+
+/* =======================================
+   SMALL GLOW EFFECTS
+======================================= */
+
+.glow-text {
+  color: #00ff88;
+
+  text-shadow:
+    0 0 6px #00ff88,
+    0 0 15px #00ff88,
+    0 0 30px #00ff88;
+}
+
+.glow-border {
+  border: 2px solid #00ff88;
+
+  box-shadow: 0 0 18px #00ff88;
+}
+
+.pixel {
+  image-rendering: pixelated;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =======================================
+   CYBER GRID BACKGROUND
+======================================= */
+
+.cyber-grid {
+  background-image:
+    linear-gradient(rgba(0, 255, 136, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 136, 0.05) 1px, transparent 1px);
+
+  background-size: 32px 32px;
+}
+
+/* =======================================
+   ACHIEVEMENT CARDS
+======================================= */
+
+.achievement {
+  background: #102114;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  margin: 20px 0;
+
+  transition: 0.3s;
+}
+
+.achievement:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 28px rgba(0, 255, 136, 0.6);
+}
+
+.achievement h3 {
+  color: #9dffbf;
+}
+
+/* =======================================
+   STATUS PILLS
+======================================= */
+
+.status {
+  display: inline-block;
+
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  font-weight: bold;
+}
+
+.status.online {
+  background: #00ff88;
+
+  color: #000;
+}
+
+.status.busy {
+  background: #ffaa00;
+
+  color: #000;
+}
+
+.status.offline {
+  background: #555;
+
+  color: #fff;
+}
+
+/* =======================================
+   WIKI BOXES
+======================================= */
+
+.wiki-entry {
+  background: #13281a;
+
+  border-left: 5px solid #00ff88;
+
+  padding: 18px;
+
+  margin: 20px 0;
+
+  border-radius: 10px;
+}
+
+.wiki-entry h3 {
+  margin-bottom: 10px;
+
+  color: #a9ffd0;
+}
+
+/* =======================================
+   CODE BLOCKS
+======================================= */
+
+.code-block {
+  background: #040704;
+
+  border: 2px solid #00ff88;
+
+  color: #66ff99;
+
+  font-family: monospace;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  overflow: auto;
+}
+
+/* =======================================
+   HERO SECTION
+======================================= */
+
+.hero {
+  text-align: center;
+
+  padding: 80px 30px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+
+  margin: auto;
+}
+
+/* =======================================
+   SEARCH BAR
+======================================= */
+
+.search {
+  display: flex;
+
+  gap: 10px;
+
+  margin: 20px 0;
+}
+
+.search input {
+  flex: 1;
+}
+
+.search button {
+  min-width: 120px;
+}
+
+/* =======================================
+   TABLE OF CONTENTS
+======================================= */
+
+.toc {
+  background: #102114;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 12px;
+
+  padding: 20px;
+}
+
+.toc a {
+  display: block;
+
+  color: #b8ffd5;
+
+  padding: 8px;
+
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: #00ff88;
+
+  padding-left: 16px;
+}
+
+/* =======================================
+   IMAGE FRAMES
+======================================= */
+
+.frame {
+  padding: 8px;
+
+  border: 3px solid #00ff88;
+
+  border-radius: 12px;
+
+  background: #0b160d;
+}
+
+.frame:hover {
+  box-shadow: 0 0 22px #00ff88;
+}
+
+/* =======================================
+   HOVER GLOW
+======================================= */
+
+.hover-glow {
+  transition: 0.25s;
+}
+
+.hover-glow:hover {
+  box-shadow:
+    0 0 15px #00ff88,
+    0 0 30px #00ff88,
+    0 0 45px #00ff88;
+}
+
+/* =======================================
+   SPACING HELPERS
+======================================= */
+
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.mb-3 {
+  margin-bottom: 30px;
+}
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.pt-1 {
+  padding-top: 10px;
+}
+.pt-2 {
+  padding-top: 20px;
+}
+.pt-3 {
+  padding-top: 30px;
+}
+
+.pb-1 {
+  padding-bottom: 10px;
+}
+.pb-2 {
+  padding-bottom: 20px;
+}
+.pb-3 {
+  padding-bottom: 30px;
+}
+
+/* =======================================
+   PIKLZ SPECIAL
+======================================= */
+
+.piklz {
+  color: #00ff88;
+
+  font-weight: bold;
+
+  text-shadow:
+    0 0 8px #00ff88,
+    0 0 18px #00ff88,
+    0 0 35px #00ff88;
+}
+
+.woofles {
+  color: #b6ffd7;
+}
+
+.snugglelit {
+  color: #7dffb2;
+}
+
+.sacred-potato {
+  color: #ffe27a;
+
+  text-shadow: 0 0 10px gold;
+}
+
+/* =======================================
+   CYBER PANELS
+======================================= */
+
+.panel {
+  background: #0f1d12;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  padding: 24px;
+
+  margin: 24px 0;
+
+  transition: 0.3s;
+}
+
+.panel:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.55);
+}
+
+.panel-title {
+  color: #9effc6;
+
+  margin-bottom: 15px;
+
+  font-size: 1.4rem;
+}
+
+/* =======================================
+   LOG BOX
+======================================= */
+
+.log {
+  background: #050805;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  font-family: monospace;
+
+  color: #7dffaf;
+
+  max-height: 300px;
+
+  overflow: auto;
+}
+
+.log p {
+  margin: 6px 0;
+}
+
+/* =======================================
+   CYBER ALERTS
+======================================= */
+
+.alert {
+  padding: 18px;
+
+  border-radius: 12px;
+
+  margin: 20px 0;
+}
+
+.alert-success {
+  background: #10301a;
+
+  border-left: 6px solid #00ff88;
+}
+
+.alert-info {
+  background: #0f2230;
+
+  border-left: 6px solid #66ffaa;
+}
+
+.alert-warning {
+  background: #352b08;
+
+  border-left: 6px solid gold;
+}
+
+/* =======================================
+   ICON BUTTONS
+======================================= */
+
+.icon-button {
+  width: 52px;
+
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 12px;
+
+  border: 2px solid #00ff88;
+
+  background: #14301c;
+
+  transition: 0.25s;
+}
+
+.icon-button:hover {
+  transform: rotate(5deg) scale(1.08);
+
+  box-shadow: 0 0 20px #00ff88;
+}
+
+/* =======================================
+   TAGS
+======================================= */
+
+.tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.tag {
+  background: #12311b;
+
+  border: 1px solid #00ff88;
+
+  color: #c9ffe0;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+}
+
+/* =======================================
+   LOADING BAR
+======================================= */
+
+.loading {
+  width: 100%;
+
+  height: 18px;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+
+  border: 2px solid #00ff88;
+
+  background: #08110a;
+}
+
+.loading::after {
+  content: "";
+
+  display: block;
+
+  width: 70%;
+
+  height: 100%;
+
+  background: linear-gradient(90deg, #00aa55, #00ff88, #66ffbb);
+}
+
+/* =======================================
+   PIXEL BOX
+======================================= */
+
+.pixel-box {
+  border: 4px solid #00ff88;
+
+  background: #102114;
+
+  padding: 20px;
+
+  image-rendering: pixelated;
+}
+
+/* =======================================
+   LINKS
+======================================= */
+
+.link {
+  color: #9effc8;
+
+  text-decoration: none;
+
+  border-bottom: 1px dotted #00ff88;
+}
+
+.link:hover {
+  color: #ffffff;
+
+  text-shadow: 0 0 12px #00ff88;
+}
+
+/* =======================================
+   SIMPLE FADE
+======================================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.7s ease;
+}
+
+/* =======================================
+   END OF PART 6
+======================================= */
+
+/* =======================================
+   DASHBOARD
+======================================= */
+
+.dashboard {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 24px;
+
+  margin: 30px 0;
+}
+
+.dashboard-card {
+  background: #102114;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 0 28px rgba(0, 255, 136, 0.6);
+}
+
+.dashboard-card h3 {
+  color: #a9ffd0;
+
+  margin-bottom: 12px;
+}
+
+/* =======================================
+   STICKY NAV
+======================================= */
+
+.sticky {
+  position: sticky;
+
+  top: 20px;
+}
+
+/* =======================================
+   FILE LIST
+======================================= */
+
+.file-list {
+  list-style: none;
+
+  padding: 0;
+}
+
+.file-list li {
+  background: #13281a;
+
+  border: 1px solid #00ff88;
+
+  border-radius: 10px;
+
+  padding: 12px;
+
+  margin-bottom: 10px;
+
+  transition: 0.25s;
+}
+
+.file-list li:hover {
+  background: #17361f;
+
+  padding-left: 18px;
+}
+
+/* =======================================
+   COMMAND OUTPUT
+======================================= */
+
+.output {
+  background: #030603;
+
+  color: #66ff99;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  font-family: Consolas, monospace;
+
+  overflow: auto;
+}
+
+/* =======================================
+   NOTIFICATION
+======================================= */
+
+.notification {
+  background: #13311c;
+
+  border-left: 6px solid #00ff88;
+
+  border-radius: 10px;
+
+  padding: 18px;
+
+  margin: 20px 0;
+}
+
+.notification strong {
+  color: #b8ffd8;
+}
+
+/* =======================================
+   USER CARD
+======================================= */
+
+.user-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 20px;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  background: #122417;
+}
+
+.user-avatar {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 50%;
+
+  border: 3px solid #00ff88;
+
+  background: #1a3a24;
+}
+
+/* =======================================
+   MINI BUTTONS
+======================================= */
+
+.small-button {
+  padding: 8px 14px;
+
+  border-radius: 8px;
+
+  background: #00aa55;
+
+  border: 2px solid #00ff88;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.small-button:hover {
+  background: #00ff88;
+
+  color: black;
+}
+
+/* =======================================
+   SPIN ANIMATION
+======================================= */
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spinSlow 12s linear infinite;
+}
+
+/* =======================================
+   PULSE ANIMATION
+======================================= */
+
+@keyframes pulseGreen {
+  0% {
+    transform: scale(1);
+
+    box-shadow: 0 0 10px #00ff88;
+  }
+
+  50% {
+    transform: scale(1.03);
+
+    box-shadow: 0 0 28px #00ff88;
+  }
+
+  100% {
+    transform: scale(1);
+
+    box-shadow: 0 0 10px #00ff88;
+  }
+}
+
+.pulse {
+  animation: pulseGreen 2s infinite;
+}
+
+/* =======================================
+   SELECTION HELPERS
+======================================= */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+/* =======================================
+   END OF PART 7
+======================================= */
+/* =======================================
+   CYBER PANELS
+======================================= */
+
+.cyber-panel {
+  background: #0d1a10;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  margin: 24px 0;
+
+  transition: 0.3s;
+}
+
+.cyber-panel:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0 18px #00ff88,
+    0 0 35px rgba(0, 255, 136, 0.35);
+}
+
+/* =======================================
+   TERMINAL WINDOW
+======================================= */
+
+.terminal-window {
+  background: #040704;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+.terminal-top {
+  background: #12311b;
+
+  padding: 12px 16px;
+
+  border-bottom: 2px solid #00ff88;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.terminal-body {
+  padding: 20px;
+
+  color: #7dffaf;
+
+  font-family: Consolas, monospace;
+
+  min-height: 200px;
+}
+
+/* =======================================
+   FEATURE CARDS
+======================================= */
+
+.feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 22px;
+}
+
+.feature {
+  background: #13281a;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.03);
+
+  box-shadow: 0 0 24px #00ff88;
+}
+
+/* =======================================
+   GLOW BOX
+======================================= */
+
+.glow-box {
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  background: #102114;
+
+  box-shadow: inset 0 0 15px rgba(0, 255, 136, 0.15);
+}
+
+/* =======================================
+   CYBER TABLE
+======================================= */
+
+.cyber-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.cyber-table th {
+  background: #13311c;
+
+  color: #b8ffd8;
+
+  border: 2px solid #00ff88;
+
+  padding: 12px;
+}
+
+.cyber-table td {
+  border: 1px solid #00ff88;
+
+  padding: 12px;
+
+  background: #0f1d12;
+}
+
+/* =======================================
+   PIXEL BADGES
+======================================= */
+
+.pixel-badge {
+  display: inline-block;
+
+  background: #14341d;
+
+  color: #b8ffd8;
+
+  border: 2px solid #00ff88;
+
+  padding: 6px 12px;
+
+  border-radius: 6px;
+
+  font-size: 0.85rem;
+
+  margin: 4px;
+}
+
+/* =======================================
+   HOVER SCALE
+======================================= */
+
+.scale {
+  transition: 0.25s;
+}
+
+.scale:hover {
+  transform: scale(1.05);
+}
+
+/* =======================================
+   GREEN SHADOW
+======================================= */
+
+.green-shadow {
+  box-shadow:
+    0 0 10px #00ff88,
+    0 0 20px rgba(0, 255, 136, 0.45);
+}
+
+/* =======================================
+   FOOTER LINKS
+======================================= */
+
+footer a {
+  color: #8dffbc;
+
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* =======================================
+   FINAL UTILITIES
+======================================= */
+
+.round-lg {
+  border-radius: 20px;
+}
+
+.border-green {
+  border: 2px solid #00ff88;
+}
+
+.bg-dark {
+  background: #08110a;
+}
+
+.text-green {
+  color: #00ff88;
+}
+
+.text-light {
+  color: #d8ffe5;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.transition {
+  transition: 0.3s;
+}
+
+/* =======================================
+   END OF PART 8
+======================================= */
+
+/* =======================================
+   CYBER HERO
+======================================= */
+
+.hero-banner {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 420px;
+
+  text-align: center;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 20px;
+
+  background: radial-gradient(circle, #174223 0%, #0b140d 100%);
+
+  box-shadow:
+    inset 0 0 35px rgba(0, 255, 136, 0.15),
+    0 0 30px rgba(0, 255, 136, 0.3);
+}
+
+.hero-banner h1 {
+  font-size: 4rem;
+
+  color: #00ff88;
+
+  margin-bottom: 20px;
+}
+
+.hero-banner p {
+  max-width: 700px;
+
+  color: #d8ffe5;
+}
+
+/* =======================================
+   INFO GRID
+======================================= */
+
+.info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 24px;
+}
+
+.info-card {
+  background: #102114;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 24px #00ff88;
+}
+
+/* =======================================
+   LIST GROUP
+======================================= */
+
+.list-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.list-item {
+  padding: 14px;
+
+  background: #13281a;
+
+  border-left: 5px solid #00ff88;
+
+  border-radius: 8px;
+}
+
+.list-item:hover {
+  background: #17351f;
+}
+
+/* =======================================
+   CHIP GROUP
+======================================= */
+
+.chips {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.chip {
+  padding: 8px 14px;
+
+  background: #12311b;
+
+  border: 1px solid #00ff88;
+
+  border-radius: 999px;
+
+  color: #c8ffe0;
+}
+
+/* =======================================
+   NEON BORDER
+======================================= */
+
+.neon {
+  border: 2px solid #00ff88;
+
+  box-shadow:
+    0 0 12px #00ff88,
+    inset 0 0 12px rgba(0, 255, 136, 0.2);
+}
+
+/* =======================================
+   FLOATING CARD
+======================================= */
+
+.float-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* =======================================
+   IMAGE OVERLAY
+======================================= */
+
+.image-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+}
+
+.image-card img {
+  display: block;
+
+  width: 100%;
+}
+
+.image-card .overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 20, 8, 0.6);
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  opacity: 0;
+
+  transition: 0.3s;
+}
+
+.image-card:hover .overlay {
+  opacity: 1;
+}
+
+/* =======================================
+   END OF PART 9
+======================================= */
+
+/* =======================================
+   CYBER TABS
+======================================= */
+
+.tabs {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 12px 18px;
+
+  background: #112417;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 10px;
+
+  color: #c9ffe0;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.tab:hover {
+  background: #00ff88;
+
+  color: #000;
+
+  box-shadow: 0 0 20px #00ff88;
+}
+
+/* =======================================
+   PANEL CONTENT
+======================================= */
+
+.tab-panel {
+  background: #0f1d12;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 14px;
+
+  padding: 22px;
+}
+
+/* =======================================
+   TIMELINE
+======================================= */
+
+.timeline {
+  position: relative;
+
+  margin: 30px 0;
+
+  padding-left: 35px;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 12px;
+
+  top: 0;
+
+  bottom: 0;
+
+  width: 3px;
+
+  background: #00ff88;
+}
+
+.timeline-item {
+  position: relative;
+
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: -29px;
+
+  top: 6px;
+
+  width: 14px;
+
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #00ff88;
+
+  box-shadow: 0 0 12px #00ff88;
+}
+
+/* =======================================
+   STATS BAR
+======================================= */
+
+.stat-bar {
+  margin: 16px 0;
+}
+
+.stat-bar span {
+  display: block;
+
+  margin-bottom: 6px;
+}
+
+.stat-fill {
+  height: 14px;
+
+  width: 90%;
+
+  background: linear-gradient(90deg, #00994d, #00ff88);
+
+  border-radius: 999px;
+}
+
+/* =======================================
+   CYBER BADGE
+======================================= */
+
+.cyber-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 14px;
+
+  background: #14311d;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 999px;
+
+  color: #caffdf;
+}
+
+/* =======================================
+   TOOLTIP
+======================================= */
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tip);
+
+  position: absolute;
+
+  bottom: 120%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: #102114;
+
+  color: #d8ffe5;
+
+  border: 1px solid #00ff88;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  white-space: nowrap;
+
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
+}
+
+/* =======================================
+   IMAGE GLOW
+======================================= */
+
+img:hover {
+  filter: brightness(1.08);
+
+  box-shadow:
+    0 0 18px #00ff88,
+    0 0 30px rgba(0, 255, 136, 0.4);
+}
+
+/* =======================================
+   SCROLL TO TOP BUTTON
+======================================= */
+
+#topButton {
+  position: fixed;
+
+  right: 20px;
+
+  bottom: 20px;
+
+  width: 55px;
+
+  height: 55px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #00ff88;
+
+  color: #000;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 20px #00ff88;
+
+  transition: 0.3s;
+}
+
+#topButton:hover {
+  transform: scale(1.1);
+}
+
+/* =======================================
+   END OF PART 10
+======================================= */
