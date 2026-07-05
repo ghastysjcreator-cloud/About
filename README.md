@@ -1,7 +1,8 @@
 # A site about me
 
 hi, and this is a site _about_ **me**
-[this is a link that leads to the site](https://ghastysjcreator-cloud.github.io/About/)
+<!-- [this is a link that leads to the site](https://ghastysjcreator-cloud.github.io/About/) -->
+[this is a link that leads to the site](http://127.0.0.1:5500/index.html)
 ![Capybara in rain chilling](src/Capybara.gif)
 
 ## My Skills
