@@ -1,0 +1,718 @@
+/* ==========================================
+   PIKLZ CYBER NETWORK
+   PART 1
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #08110a;
+  color: #d8ffe5;
+  line-height: 1.7;
+}
+
+/* Header */
+
+header {
+  background: #102618;
+  border-bottom: 4px solid #00ff88;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  color: #00ff88;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #bfffd8;
+  margin-bottom: 25px;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  color: #00ff88;
+  text-decoration: none;
+  border: 2px solid #00ff88;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #163320;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  background: #00ff88;
+  color: #000;
+}
+
+/* Main */
+
+main {
+  width: min(1200px, 95%);
+  margin: 40px auto;
+}
+
+/* Sections */
+
+section {
+  background: #102114;
+  border: 2px solid #00ff88;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+/* Headings */
+
+h2 {
+  color: #00ff88;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #a8ffd1;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+
+p {
+  margin-bottom: 12px;
+}
+
+/* Lists */
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* Footer */
+
+footer {
+  background: #102618;
+  border-top: 4px solid #00ff88;
+  text-align: center;
+  padding: 35px;
+}
+
+footer h2 {
+  color: #00ff88;
+}
+
+footer p {
+  color: #d8ffe5;
+}
+/* ==========================================
+   PIKLZ CYBER NETWORK
+   PART 2 - CONTENT
+========================================== */
+
+/* Hero */
+
+#hero {
+  text-align: center;
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #13311d, #0b140d);
+}
+
+#hero h2 {
+  font-size: 2.8rem;
+}
+
+#hero p {
+  max-width: 850px;
+  margin: 18px auto;
+}
+
+/* Articles */
+
+article {
+  background: #16301d;
+  border-left: 6px solid #00ff88;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+article h3 {
+  color: #b8ffd8;
+}
+
+article:hover {
+  background: #1b3b24;
+}
+
+/* Cards already in your HTML */
+
+.favorite-card,
+.workspace-card,
+.gallery-room {
+  background: #17311f;
+  border: 2px solid #00ff88;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 18px 0;
+}
+
+/* Terminal */
+
+pre {
+  background: #020502;
+  color: #66ff99;
+  border: 2px solid #00ff88;
+  border-radius: 12px;
+  padding: 20px;
+  overflow: auto;
+  font-family: Consolas, monospace;
+  line-height: 1.6;
+}
+
+/* Quotes */
+
+blockquote {
+  background: #17311f;
+  border-left: 6px solid #00ff88;
+  border-radius: 10px;
+  padding: 18px;
+  margin: 18px 0;
+  font-style: italic;
+}
+
+/* Lists */
+
+li::marker {
+  color: #00ff88;
+}
+
+/* Sections with lots of articles */
+
+#projects article,
+#characters article,
+#timeline article,
+#news article,
+#future-projects article,
+#faq article,
+#database article {
+  transition: 0.25s;
+}
+
+#projects article:hover,
+#characters article:hover,
+#timeline article:hover,
+#news article:hover,
+#future-projects article:hover,
+#faq article:hover,
+#database article:hover {
+  transform: translateX(8px);
+}
+
+/* Special profile sections */
+
+#creator-profile,
+#about,
+#skills,
+#coding-goals {
+  border-color: #66ff99;
+}
+
+/* Downloads */
+
+#downloads ul {
+  columns: 2;
+}
+
+@media (max-width: 700px) {
+  #downloads ul {
+    columns: 1;
+  }
+}
+/* ==========================================
+   PIKLZ CYBER NETWORK
+   PART 3 - EFFECTS & ANIMATIONS
+========================================== */
+
+/* Background Grid */
+
+body {
+  background-color: #08110a;
+
+  background-image:
+    linear-gradient(rgba(0, 255, 136, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 136, 0.05) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+/* Smooth transitions */
+
+section,
+article,
+nav a,
+.favorite-card,
+.workspace-card,
+.gallery-room {
+  transition: 0.3s ease;
+}
+
+/* Section Hover */
+
+section:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.35);
+}
+
+/* Card Hover */
+
+article:hover,
+.favorite-card:hover,
+.workspace-card:hover,
+.gallery-room:hover {
+  box-shadow: 0 0 22px rgba(0, 255, 136, 0.45);
+}
+
+/* Hero Glow */
+
+#hero {
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.25);
+}
+
+/* Titles */
+
+h1,
+h2,
+h3 {
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.45);
+}
+
+/* Timeline */
+
+#timeline article {
+  position: relative;
+
+  padding-left: 34px;
+}
+
+#timeline article::before {
+  content: "";
+
+  position: absolute;
+
+  left: 10px;
+
+  top: 25px;
+
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #00ff88;
+
+  box-shadow: 0 0 12px #00ff88;
+}
+
+#timeline article::after {
+  content: "";
+
+  position: absolute;
+
+  left: 15px;
+
+  top: 37px;
+
+  bottom: -22px;
+
+  width: 2px;
+
+  background: #00aa55;
+}
+
+#timeline article:last-child::after {
+  display: none;
+}
+
+/* Terminal */
+
+pre {
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.45);
+}
+
+/* Selection */
+
+::selection {
+  background: #00ff88;
+
+  color: #000;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08110a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cc66;
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff88;
+}
+
+/* Float Animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#hero {
+  animation: float 5s ease-in-out infinite;
+}
+/* ==========================================
+   PIKLZ CYBER NETWORK
+   PART 4 - POLISH & RESPONSIVE
+========================================== */
+
+/* Smooth fade */
+
+section {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* Glowing headings */
+
+h1,
+h2,
+h3 {
+  transition: 0.3s;
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+  color: #baffd4;
+
+  text-shadow:
+    0 0 12px #00ff88,
+    0 0 25px #00ff88;
+}
+
+/* Navigation */
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.25);
+}
+
+nav a:hover {
+  box-shadow:
+    0 0 12px #00ff88,
+    0 0 30px rgba(0, 255, 136, 0.45);
+
+  transform: translateY(-3px);
+}
+
+/* Images (for future artwork) */
+
+img {
+  max-width: 100%;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 12px;
+
+  display: block;
+
+  margin: auto;
+
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.25);
+}
+
+/* Links */
+
+a {
+  transition: 0.25s;
+}
+
+a:hover {
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* Terminal */
+
+pre {
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+/* Cards */
+
+.favorite-card,
+.workspace-card,
+.gallery-room,
+article {
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    background 0.25s;
+}
+
+.favorite-card:hover,
+.workspace-card:hover,
+.gallery-room:hover,
+article:hover {
+  transform: translateY(-4px);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 40px;
+
+  box-shadow: 0 0 35px rgba(0, 255, 136, 0.35);
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  nav a {
+    width: 220px;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  #hero {
+    padding: 40px 20px;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+  }
+}
+/* ==========================================
+   PIKLZ CYBER NETWORK
+   PART 5 - FINAL EFFECTS
+========================================== */
+
+/* Neon glow for sections */
+
+section {
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.15);
+}
+
+section:hover {
+  box-shadow:
+    0 0 15px rgba(0, 255, 136, 0.35),
+    0 0 35px rgba(0, 255, 136, 0.18);
+}
+
+/* Animated glowing border */
+
+@keyframes borderGlow {
+  0% {
+    border-color: #00ff88;
+  }
+
+  50% {
+    border-color: #66ffbb;
+  }
+
+  100% {
+    border-color: #00ff88;
+  }
+}
+
+section,
+.favorite-card,
+.workspace-card,
+.gallery-room,
+article {
+  animation: borderGlow 4s linear infinite;
+}
+
+/* Hero title pulse */
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 8px #00ff88;
+  }
+
+  50% {
+    text-shadow:
+      0 0 18px #00ff88,
+      0 0 35px #00ff88;
+  }
+
+  100% {
+    text-shadow: 0 0 8px #00ff88;
+  }
+}
+
+header h1 {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Nice horizontal divider */
+
+section h2 {
+  border-bottom: 2px solid rgba(0, 255, 136, 0.35);
+
+  padding-bottom: 8px;
+
+  margin-bottom: 18px;
+}
+
+/* Better spacing */
+
+article,
+.favorite-card,
+.workspace-card,
+.gallery-room {
+  margin-top: 18px;
+
+  margin-bottom: 18px;
+}
+
+/* Green focus outline */
+
+a:focus {
+  outline: 2px solid #00ff88;
+
+  outline-offset: 4px;
+}
+
+/* Slight glow on lists */
+
+li {
+  transition: 0.25s;
+}
+
+li:hover {
+  color: #bfffd9;
+
+  text-shadow: 0 0 8px #00ff88;
+}
+
+/* Scroll animation */
+
+html {
+  scroll-padding-top: 20px;
+}
+
+/* Footer polish */
+
+footer {
+  color: #d8ffe5;
+
+  letter-spacing: 1px;
+}
+
+/* Tiny cyber scanline effect */
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background: repeating-linear-gradient(transparent 0px, transparent 3px, rgba(0, 255, 136, 0.02) 4px);
+
+  z-index: 9999;
+}
+
+/* Soft screen vignette */
+
+body::after {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.25));
+
+  z-index: 9998;
+}
