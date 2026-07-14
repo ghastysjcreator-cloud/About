@@ -716,3 +716,181 @@ body::after {
 
   z-index: 9998;
 }
+/* ==========================
+   PIKLZ ADVENTURE
+========================== */
+
+.game-container {
+  width: 700px;
+
+  margin: 60px auto;
+
+  padding: 25px;
+
+  background: #07130a;
+
+  border: 3px solid #00ff88;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 0 25px #00ff88,
+    inset 0 0 18px rgba(0, 255, 136, 0.15);
+}
+
+.game-title {
+  color: #00ff88;
+
+  font-size: 2rem;
+
+  letter-spacing: 3px;
+
+  text-shadow:
+    0 0 12px #00ff88,
+    0 0 25px #00ff88;
+
+  margin-bottom: 25px;
+}
+
+.game-board {
+  position: relative;
+
+  width: 500px;
+
+  height: 500px;
+
+  margin: 0 auto;
+
+  background: linear-gradient(#194d26, #143f20);
+
+  border: 3px solid #00ff88;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 0 25px rgba(0, 255, 136, 0.25),
+    0 0 20px #00ff88;
+}
+
+/* Optional grid */
+
+.game-board {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+
+  background-size: 100px 100px;
+}
+
+.player {
+  position: absolute;
+
+  width: 80px;
+
+  height: 80px;
+
+  top: 10px;
+
+  left: 10px;
+
+  image-rendering: pixelated;
+
+  transition:
+    left 0.2s,
+    top 0.2s;
+
+  filter: drop-shadow(0 0 10px #00ff88);
+}
+
+.controls {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+.middle-controls {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.controls button {
+  width: 70px;
+
+  height: 70px;
+
+  font-size: 28px;
+
+  color: #00ff88;
+
+  background: #0b2414;
+
+  border: 2px solid #00ff88;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.25);
+}
+
+.controls button:hover {
+  background: #00aa55;
+
+  color: white;
+
+  transform: scale(1.08);
+
+  box-shadow: 0 0 20px #00ff88;
+}
+
+.controls button:active {
+  transform: scale(0.95);
+}
+.game-board {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #00ff88;
+  background: #194d26;
+}
+
+.world {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 2000px; /* 20 blocks */
+  height: 2000px;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+
+  background-size: 100px 100px;
+}
+
+.player {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  image-rendering: pixelated;
+  left: 0;
+  top: 0;
+}
